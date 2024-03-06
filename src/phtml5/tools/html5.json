@@ -1,0 +1,1129 @@
+{
+    "element_groups": [
+        {
+            "name": "metadataContent",
+            "elements": [
+                "base",
+                "command",
+                "link",
+                "meta",
+                "noscript",
+                "script",
+                "style",
+                "title"
+            ]
+        },
+        {
+            "name": "flowContent",
+            "elements": [
+                "a",
+                "abbr",
+                "area",
+                "address",
+                "article",
+                "aside",
+                "audio",
+                "b",
+                "bdi",
+                "blockquote",
+                "bdo",
+                "br",
+                "button",
+                "canvas",
+                "cite",
+                "code",
+                "command",
+                "datalist",
+                "details",
+                "dfn",
+                "dialog",
+                "div",
+                "dl",
+                "em",
+                "embed",
+                "fieldset",
+                "figure",
+                "figcaption",
+                "footer",
+                "form",
+                "h1",
+                "h2",
+                "h3",
+                "h4",
+                "h5",
+                "h6",
+                "header",
+                "hgroup",
+                "hr",
+                "i",
+                "iframe",
+                "img",
+                "picture",
+                "input",
+                "ins",
+                "kbd",
+                "keygen",
+                "label",
+                "link",
+                "main",
+                "map",
+                "mark",
+                "math",
+                "menu",
+                "meta",
+                "meter",
+                "nav",
+                "noscript",
+                "ol",
+                "object",
+                "output",
+                "p",
+                "pre",
+                "progress",
+                "q",
+                "ruby",
+                "samp",
+                "script",
+                "section",
+                "select",
+                "small",
+                "span",
+                "strong",
+                "style",
+                "summary",
+                "sub",
+                "sup",
+                "svg",
+                "table",
+                "textarea",
+                "time",
+                "ul",
+                "var",
+                "video"
+            ]
+        },
+        {
+            "name": "headingContent",
+            "elements": [
+                "h1",
+                "h2",
+                "h3",
+                "h4",
+                "h5",
+                "h6",
+                "hgroup"
+            ]
+        },
+        {
+            "name": "sectioningContent",
+            "elements": [
+                "article",
+                "aside",
+                "main",
+                "nav",
+                "section"
+            ]
+        },
+        {
+            "name": "phrasingContent",
+            "elements": [
+                "a",
+                "abbr",
+                "area",
+                "audio",
+                "b",
+                "bdi",
+                "bdo",
+                "br",
+                "button",
+                "canvas",
+                "cite",
+                "code",
+                "command",
+                "datalist",
+                "dfn",
+                "em",
+                "embed",
+                "i",
+                "iframe",
+                "img",
+                "picture",
+                "input",
+                "ins",
+                "kbd",
+                "keygen",
+                "label",
+                "link",
+                "map",
+                "mark",
+                "math",
+                "meta",
+                "meter",
+                "noscript",
+                "object",
+                "output",
+                "progress",
+                "q",
+                "ruby",
+                "samp",
+                "script",
+                "select",
+                "small",
+                "span",
+                "strong",
+                "sub",
+                "sup",
+                "svg",
+                "textarea",
+                "time",
+                "var",
+                "video"
+            ]
+        },
+        {
+            "name": "interactiveContent",
+            "elements": [
+                "a",
+                "audio",
+                "button",
+                "details",
+                "embed",
+                "iframe",
+                "img",
+                "picture",
+                "input",
+                "keygen",
+                "label",
+                "menu",
+                "object",
+                "select",
+                "textarea",
+                "video"
+            ]
+        }
+    ],
+    "global_attributes": [
+        {
+            "html": "accesskey",
+            "python": "accesskey",
+            "type": "str"
+        },
+        {
+            "html": "class",
+            "python": "classes",
+            "type": "str"
+        },
+        {
+            "html": "contenteditable",
+            "python": "contenteditable",
+            "type": "str"
+        },
+        {
+            "html": "contextmenu",
+            "python": "contextmenu",
+            "type": "str"
+        },
+        {
+            "html": "dir",
+            "python": "dir",
+            "type": "str"
+        },
+        {
+            "html": "draggable",
+            "python": "draggable",
+            "type": "str"
+        },
+        {
+            "html": "dropzone",
+            "python": "dropzone",
+            "type": "str"
+        },
+        {
+            "html": "hidden",
+            "python": "hidden",
+            "type": "bool"
+        },
+        {
+            "html": "id",
+            "python": "id",
+            "type": "str"
+        },
+        {
+            "html": "lang",
+            "python": "lang",
+            "type": "str"
+        },
+        {
+            "html": "spellcheck",
+            "python": "spellcheck",
+            "type": "str"
+        },
+        {
+            "html": "style",
+            "python": "style",
+            "type": "str"
+        },
+        {
+            "html": "tabindex",
+            "python": "tabindex",
+            "type": "str"
+        },
+        {
+            "html": "title",
+            "python": "title",
+            "type": "str"
+        }
+    ],
+    "elements": [
+        {
+            "name": "html",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "body",
+                "head"
+            ]
+        },
+        {
+            "name": "head",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "metadataContent"
+            ]
+        },
+        {
+            "name": "title",
+            "text": true,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "base",
+            "text": false,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "link",
+            "text": false,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "meta",
+            "text": false,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "style",
+            "text": true,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "summary",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent",
+                "headingContent"
+            ]
+        },
+        {
+            "name": "script",
+            "text": true,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "noscript",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        },
+        {
+            "name": "body",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        },
+        {
+            "name": "section",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        },
+        {
+            "name": "nav",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        },
+        {
+            "name": "article",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        },
+        {
+            "name": "aside",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        },
+        {
+            "name": "h1",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "h2",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "h3",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "h4",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "h5",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "h6",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "hgroup",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "h1",
+                "h2",
+                "h3",
+                "h4",
+                "h5",
+                "h6"
+            ]
+        },
+        {
+            "name": "header",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        },
+        {
+            "name": "footer",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        },
+        {
+            "name": "address",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        },
+        {
+            "name": "p",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "br",
+            "text": false,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "pre",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "dialog",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        },
+        {
+            "name": "blockquote",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        },
+        {
+            "name": "ol",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "li"
+            ]
+        },
+        {
+            "name": "ul",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "li"
+            ]
+        },
+        {
+            "name": "li",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        },
+        {
+            "name": "dl",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "dd",
+                "dt"
+            ]
+        },
+        {
+            "name": "dt",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "dd",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        },
+        {
+            "name": "a",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        },
+        {
+            "name": "em",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "strong",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "small",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "cite",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "q",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "dfn",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "abbr",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "code",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "var",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "samp",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "kbd",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "sub",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "sup",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "i",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "b",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "main",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "mark",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "math",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "progress",
+            "text": true,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "meter",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "time",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "ruby",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent",
+                "rt",
+                "rp"
+            ]
+        },
+        {
+            "name": "rt",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "rp",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "bdi",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "bdo",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "span",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "ins",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "figure",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "flowContent",
+                "legend",
+                "figcaption"
+            ]
+        },
+        {
+            "name": "figcaption",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        },
+        {
+            "name": "img",
+            "text": false,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "picture",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "source",
+                "img"
+            ]
+        },
+        {
+            "name": "iframe",
+            "text": true,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "embed",
+            "text": false,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "object",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "param"
+            ]
+        },
+        {
+            "name": "param",
+            "text": false,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "details",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "legend",
+                "flowContent"
+            ]
+        },
+        {
+            "name": "command",
+            "text": false,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "menu",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "li",
+                "flowContent"
+            ]
+        },
+        {
+            "name": "legend",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "flowContent",
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "div",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        },
+        {
+            "name": "source",
+            "text": false,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "audio",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "source"
+            ]
+        },
+        {
+            "name": "video",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "source"
+            ]
+        },
+        {
+            "name": "hr",
+            "text": false,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "form",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        },
+        {
+            "name": "fieldset",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "legend",
+                "flowContent"
+            ]
+        },
+        {
+            "name": "label",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "input",
+            "text": false,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "button",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "select",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "option",
+                "optgroup"
+            ]
+        },
+        {
+            "name": "datalist",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "option",
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "optgroup",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "option"
+            ]
+        },
+        {
+            "name": "option",
+            "text": true,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "textarea",
+            "text": true,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "keygen",
+            "text": true,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "output",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "canvas",
+            "text": true,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "map",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "phrasingContent",
+                "flowContent"
+            ]
+        },
+        {
+            "name": "area",
+            "text": false,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "mathml",
+            "text": false,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "svg",
+            "text": false,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "table",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "caption",
+                "colgroup",
+                "thead",
+                "tfoot",
+                "tbody",
+                "tr"
+            ]
+        },
+        {
+            "name": "caption",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        },
+        {
+            "name": "colgroup",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "col"
+            ]
+        },
+        {
+            "name": "col",
+            "text": false,
+            "attributes": [],
+            "children": []
+        },
+        {
+            "name": "thead",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "tr"
+            ]
+        },
+        {
+            "name": "tfoot",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "tr"
+            ]
+        },
+        {
+            "name": "tbody",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "tr"
+            ]
+        },
+        {
+            "name": "tr",
+            "text": false,
+            "attributes": [],
+            "children": [
+                "th",
+                "td"
+            ]
+        },
+        {
+            "name": "th",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "phrasingContent"
+            ]
+        },
+        {
+            "name": "td",
+            "text": true,
+            "attributes": [],
+            "children": [
+                "flowContent"
+            ]
+        }
+    ]
+}
