@@ -58,7 +58,7 @@ def style(_class: str | None = None, **kwargs: Any) -> Style:
 
 class Summary(HTMLElement):
 
-    def __call__(self: Summary, *args: Phrasingcontent | Headingcontent | list[Phrasingcontent | Headingcontent]) -> Summary:
+    def __call__(self: Summary, *args: Phrasingcontent | Headingcontent | str | list[Phrasingcontent | Headingcontent | str]) -> Summary:
         return Summary(self._tag, self._attributes, self.get_children_from_args(args))
 
 def summary(_class: str | None = None, **kwargs: Any) -> Summary:
@@ -74,7 +74,7 @@ def script(_class: str | None = None, **kwargs: Any) -> Script:
 
 class Noscript(HTMLElement):
 
-    def __call__(self: Noscript, *args: Flowcontent | list[Flowcontent]) -> Noscript:
+    def __call__(self: Noscript, *args: Flowcontent | str | list[Flowcontent | str]) -> Noscript:
         return Noscript(self._tag, self._attributes, self.get_children_from_args(args))
 
 def noscript(_class: str | None = None, **kwargs: Any) -> Noscript:
@@ -110,7 +110,7 @@ def nav(_class: str | None = None, **kwargs: Any) -> Nav:
 
 class Article(HTMLElement):
 
-    def __call__(self: Article, *args: Flowcontent | list[Flowcontent]) -> Article:
+    def __call__(self: Article, *args: Flowcontent | str | list[Flowcontent | str]) -> Article:
         return Article(self._tag, self._attributes, self.get_children_from_args(args))
 
 def article(_class: str | None = None, **kwargs: Any) -> Article:
@@ -128,7 +128,7 @@ def aside(_class: str | None = None, **kwargs: Any) -> Aside:
 
 class H1(HTMLElement):
 
-    def __call__(self: H1, *args: Phrasingcontent | list[Phrasingcontent]) -> H1:
+    def __call__(self: H1, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> H1:
         return H1(self._tag, self._attributes, self.get_children_from_args(args))
 
 def h1(_class: str | None = None, **kwargs: Any) -> H1:
@@ -137,7 +137,7 @@ def h1(_class: str | None = None, **kwargs: Any) -> H1:
 
 class H2(HTMLElement):
 
-    def __call__(self: H2, *args: Phrasingcontent | list[Phrasingcontent]) -> H2:
+    def __call__(self: H2, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> H2:
         return H2(self._tag, self._attributes, self.get_children_from_args(args))
 
 def h2(_class: str | None = None, **kwargs: Any) -> H2:
@@ -146,7 +146,7 @@ def h2(_class: str | None = None, **kwargs: Any) -> H2:
 
 class H3(HTMLElement):
 
-    def __call__(self: H3, *args: Phrasingcontent | list[Phrasingcontent]) -> H3:
+    def __call__(self: H3, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> H3:
         return H3(self._tag, self._attributes, self.get_children_from_args(args))
 
 def h3(_class: str | None = None, **kwargs: Any) -> H3:
@@ -155,7 +155,7 @@ def h3(_class: str | None = None, **kwargs: Any) -> H3:
 
 class H4(HTMLElement):
 
-    def __call__(self: H4, *args: Phrasingcontent | list[Phrasingcontent]) -> H4:
+    def __call__(self: H4, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> H4:
         return H4(self._tag, self._attributes, self.get_children_from_args(args))
 
 def h4(_class: str | None = None, **kwargs: Any) -> H4:
@@ -164,7 +164,7 @@ def h4(_class: str | None = None, **kwargs: Any) -> H4:
 
 class H5(HTMLElement):
 
-    def __call__(self: H5, *args: Phrasingcontent | list[Phrasingcontent]) -> H5:
+    def __call__(self: H5, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> H5:
         return H5(self._tag, self._attributes, self.get_children_from_args(args))
 
 def h5(_class: str | None = None, **kwargs: Any) -> H5:
@@ -173,7 +173,7 @@ def h5(_class: str | None = None, **kwargs: Any) -> H5:
 
 class H6(HTMLElement):
 
-    def __call__(self: H6, *args: Phrasingcontent | list[Phrasingcontent]) -> H6:
+    def __call__(self: H6, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> H6:
         return H6(self._tag, self._attributes, self.get_children_from_args(args))
 
 def h6(_class: str | None = None, **kwargs: Any) -> H6:
@@ -218,7 +218,7 @@ def address(_class: str | None = None, **kwargs: Any) -> Address:
 
 class P(HTMLElement):
 
-    def __call__(self: P, *args: Phrasingcontent | list[Phrasingcontent]) -> P:
+    def __call__(self: P, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> P:
         return P(self._tag, self._attributes, self.get_children_from_args(args))
 
 def p(_class: str | None = None, **kwargs: Any) -> P:
@@ -234,7 +234,7 @@ def br(_class: str | None = None, **kwargs: Any) -> Br:
 
 class Pre(HTMLElement):
 
-    def __call__(self: Pre, *args: Phrasingcontent | list[Phrasingcontent]) -> Pre:
+    def __call__(self: Pre, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> Pre:
         return Pre(self._tag, self._attributes, self.get_children_from_args(args))
 
 def pre(_class: str | None = None, **kwargs: Any) -> Pre:
@@ -252,7 +252,7 @@ def dialog(_class: str | None = None, **kwargs: Any) -> Dialog:
 
 class Blockquote(HTMLElement):
 
-    def __call__(self: Blockquote, *args: Flowcontent | list[Flowcontent]) -> Blockquote:
+    def __call__(self: Blockquote, *args: Flowcontent | str | list[Flowcontent | str]) -> Blockquote:
         return Blockquote(self._tag, self._attributes, self.get_children_from_args(args))
 
 def blockquote(_class: str | None = None, **kwargs: Any) -> Blockquote:
@@ -279,7 +279,7 @@ def ul(_class: str | None = None, **kwargs: Any) -> Ul:
 
 class Li(HTMLElement):
 
-    def __call__(self: Li, *args: Flowcontent | list[Flowcontent]) -> Li:
+    def __call__(self: Li, *args: Flowcontent | str | list[Flowcontent | str]) -> Li:
         return Li(self._tag, self._attributes, self.get_children_from_args(args))
 
 def li(_class: str | None = None, **kwargs: Any) -> Li:
@@ -297,7 +297,7 @@ def dl(_class: str | None = None, **kwargs: Any) -> Dl:
 
 class Dt(HTMLElement):
 
-    def __call__(self: Dt, *args: Phrasingcontent | list[Phrasingcontent]) -> Dt:
+    def __call__(self: Dt, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> Dt:
         return Dt(self._tag, self._attributes, self.get_children_from_args(args))
 
 def dt(_class: str | None = None, **kwargs: Any) -> Dt:
@@ -306,7 +306,7 @@ def dt(_class: str | None = None, **kwargs: Any) -> Dt:
 
 class Dd(HTMLElement):
 
-    def __call__(self: Dd, *args: Flowcontent | list[Flowcontent]) -> Dd:
+    def __call__(self: Dd, *args: Flowcontent | str | list[Flowcontent | str]) -> Dd:
         return Dd(self._tag, self._attributes, self.get_children_from_args(args))
 
 def dd(_class: str | None = None, **kwargs: Any) -> Dd:
@@ -315,7 +315,7 @@ def dd(_class: str | None = None, **kwargs: Any) -> Dd:
 
 class A(HTMLElement):
 
-    def __call__(self: A, *args: Flowcontent | list[Flowcontent]) -> A:
+    def __call__(self: A, *args: Flowcontent | str | list[Flowcontent | str]) -> A:
         return A(self._tag, self._attributes, self.get_children_from_args(args))
 
 def a(_class: str | None = None, **kwargs: Any) -> A:
@@ -360,7 +360,7 @@ def cite(_class: str | None = None, **kwargs: Any) -> Cite:
 
 class Q(HTMLElement):
 
-    def __call__(self: Q, *args: Phrasingcontent | list[Phrasingcontent]) -> Q:
+    def __call__(self: Q, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> Q:
         return Q(self._tag, self._attributes, self.get_children_from_args(args))
 
 def q(_class: str | None = None, **kwargs: Any) -> Q:
@@ -450,7 +450,7 @@ def i(_class: str | None = None, **kwargs: Any) -> I:
 
 class B(HTMLElement):
 
-    def __call__(self: B, *args: Phrasingcontent | list[Phrasingcontent]) -> B:
+    def __call__(self: B, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> B:
         return B(self._tag, self._attributes, self.get_children_from_args(args))
 
 def b(_class: str | None = None, **kwargs: Any) -> B:
@@ -493,7 +493,7 @@ def progress(_class: str | None = None, **kwargs: Any) -> Progress:
 
 class Meter(HTMLElement):
 
-    def __call__(self: Meter, *args: Phrasingcontent | list[Phrasingcontent]) -> Meter:
+    def __call__(self: Meter, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> Meter:
         return Meter(self._tag, self._attributes, self.get_children_from_args(args))
 
 def meter(_class: str | None = None, **kwargs: Any) -> Meter:
@@ -502,7 +502,7 @@ def meter(_class: str | None = None, **kwargs: Any) -> Meter:
 
 class Time(HTMLElement):
 
-    def __call__(self: Time, *args: Phrasingcontent | list[Phrasingcontent]) -> Time:
+    def __call__(self: Time, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> Time:
         return Time(self._tag, self._attributes, self.get_children_from_args(args))
 
 def time(_class: str | None = None, **kwargs: Any) -> Time:
@@ -511,7 +511,7 @@ def time(_class: str | None = None, **kwargs: Any) -> Time:
 
 class Ruby(HTMLElement):
 
-    def __call__(self: Ruby, *args: Phrasingcontent | Rt | Rp | list[Phrasingcontent | Rt | Rp]) -> Ruby:
+    def __call__(self: Ruby, *args: Phrasingcontent | Rt | Rp | str | list[Phrasingcontent | Rt | Rp | str]) -> Ruby:
         return Ruby(self._tag, self._attributes, self.get_children_from_args(args))
 
 def ruby(_class: str | None = None, **kwargs: Any) -> Ruby:
@@ -556,7 +556,7 @@ def bdo(_class: str | None = None, **kwargs: Any) -> Bdo:
 
 class Span(HTMLElement):
 
-    def __call__(self: Span, *args: Phrasingcontent | list[Phrasingcontent]) -> Span:
+    def __call__(self: Span, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> Span:
         return Span(self._tag, self._attributes, self.get_children_from_args(args))
 
 def span(_class: str | None = None, **kwargs: Any) -> Span:
@@ -565,7 +565,7 @@ def span(_class: str | None = None, **kwargs: Any) -> Span:
 
 class Ins(HTMLElement):
 
-    def __call__(self: Ins, *args: Phrasingcontent | list[Phrasingcontent]) -> Ins:
+    def __call__(self: Ins, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> Ins:
         return Ins(self._tag, self._attributes, self.get_children_from_args(args))
 
 def ins(_class: str | None = None, **kwargs: Any) -> Ins:
@@ -574,7 +574,7 @@ def ins(_class: str | None = None, **kwargs: Any) -> Ins:
 
 class Figure(HTMLElement):
 
-    def __call__(self: Figure, *args: Flowcontent | Legend | Figcaption | list[Flowcontent | Legend | Figcaption]) -> Figure:
+    def __call__(self: Figure, *args: Flowcontent | Legend | Figcaption | str | list[Flowcontent | Legend | Figcaption | str]) -> Figure:
         return Figure(self._tag, self._attributes, self.get_children_from_args(args))
 
 def figure(_class: str | None = None, **kwargs: Any) -> Figure:
@@ -583,7 +583,7 @@ def figure(_class: str | None = None, **kwargs: Any) -> Figure:
 
 class Figcaption(HTMLElement):
 
-    def __call__(self: Figcaption, *args: Flowcontent | list[Flowcontent]) -> Figcaption:
+    def __call__(self: Figcaption, *args: Flowcontent | str | list[Flowcontent | str]) -> Figcaption:
         return Figcaption(self._tag, self._attributes, self.get_children_from_args(args))
 
 def figcaption(_class: str | None = None, **kwargs: Any) -> Figcaption:
@@ -622,7 +622,7 @@ def embed(_class: str | None = None, **kwargs: Any) -> Embed:
 
 class Object(HTMLElement):
 
-    def __call__(self: Object, *args: Param | list[Param]) -> Object:
+    def __call__(self: Object, *args: Param | str | list[Param | str]) -> Object:
         return Object(self._tag, self._attributes, self.get_children_from_args(args))
 
 def object(_class: str | None = None, **kwargs: Any) -> Object:
@@ -638,7 +638,7 @@ def param(_class: str | None = None, **kwargs: Any) -> Param:
 
 class Details(HTMLElement):
 
-    def __call__(self: Details, *args: Legend | Flowcontent | list[Legend | Flowcontent]) -> Details:
+    def __call__(self: Details, *args: Legend | Flowcontent | str | list[Legend | Flowcontent | str]) -> Details:
         return Details(self._tag, self._attributes, self.get_children_from_args(args))
 
 def details(_class: str | None = None, **kwargs: Any) -> Details:
@@ -663,7 +663,7 @@ def menu(_class: str | None = None, **kwargs: Any) -> Menu:
 
 class Legend(HTMLElement):
 
-    def __call__(self: Legend, *args: Flowcontent | Phrasingcontent | list[Flowcontent | Phrasingcontent]) -> Legend:
+    def __call__(self: Legend, *args: Flowcontent | Phrasingcontent | str | list[Flowcontent | Phrasingcontent | str]) -> Legend:
         return Legend(self._tag, self._attributes, self.get_children_from_args(args))
 
 def legend(_class: str | None = None, **kwargs: Any) -> Legend:
@@ -688,7 +688,7 @@ def source(_class: str | None = None, **kwargs: Any) -> Source:
 
 class Audio(HTMLElement):
 
-    def __call__(self: Audio, *args: Source | list[Source]) -> Audio:
+    def __call__(self: Audio, *args: Source | str | list[Source | str]) -> Audio:
         return Audio(self._tag, self._attributes, self.get_children_from_args(args))
 
 def audio(_class: str | None = None, **kwargs: Any) -> Audio:
@@ -697,7 +697,7 @@ def audio(_class: str | None = None, **kwargs: Any) -> Audio:
 
 class Video(HTMLElement):
 
-    def __call__(self: Video, *args: Source | list[Source]) -> Video:
+    def __call__(self: Video, *args: Source | str | list[Source | str]) -> Video:
         return Video(self._tag, self._attributes, self.get_children_from_args(args))
 
 def video(_class: str | None = None, **kwargs: Any) -> Video:
@@ -713,7 +713,7 @@ def hr(_class: str | None = None, **kwargs: Any) -> Hr:
 
 class Form(HTMLElement):
 
-    def __call__(self: Form, *args: Flowcontent | list[Flowcontent]) -> Form:
+    def __call__(self: Form, *args: Flowcontent | str | list[Flowcontent | str]) -> Form:
         return Form(self._tag, self._attributes, self.get_children_from_args(args))
 
 def form(_class: str | None = None, **kwargs: Any) -> Form:
@@ -722,7 +722,7 @@ def form(_class: str | None = None, **kwargs: Any) -> Form:
 
 class Fieldset(HTMLElement):
 
-    def __call__(self: Fieldset, *args: Legend | Flowcontent | list[Legend | Flowcontent]) -> Fieldset:
+    def __call__(self: Fieldset, *args: Legend | Flowcontent | str | list[Legend | Flowcontent | str]) -> Fieldset:
         return Fieldset(self._tag, self._attributes, self.get_children_from_args(args))
 
 def fieldset(_class: str | None = None, **kwargs: Any) -> Fieldset:
@@ -731,7 +731,7 @@ def fieldset(_class: str | None = None, **kwargs: Any) -> Fieldset:
 
 class Label(HTMLElement):
 
-    def __call__(self: Label, *args: Phrasingcontent | list[Phrasingcontent]) -> Label:
+    def __call__(self: Label, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> Label:
         return Label(self._tag, self._attributes, self.get_children_from_args(args))
 
 def label(_class: str | None = None, **kwargs: Any) -> Label:
@@ -747,7 +747,7 @@ def input(_class: str | None = None, **kwargs: Any) -> Input:
 
 class Button(HTMLElement):
 
-    def __call__(self: Button, *args: Phrasingcontent | list[Phrasingcontent]) -> Button:
+    def __call__(self: Button, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> Button:
         return Button(self._tag, self._attributes, self.get_children_from_args(args))
 
 def button(_class: str | None = None, **kwargs: Any) -> Button:
@@ -804,7 +804,7 @@ def keygen(_class: str | None = None, **kwargs: Any) -> Keygen:
 
 class Output(HTMLElement):
 
-    def __call__(self: Output, *args: Phrasingcontent | list[Phrasingcontent]) -> Output:
+    def __call__(self: Output, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> Output:
         return Output(self._tag, self._attributes, self.get_children_from_args(args))
 
 def output(_class: str | None = None, **kwargs: Any) -> Output:
@@ -920,7 +920,7 @@ def tr(_class: str | None = None, **kwargs: Any) -> Tr:
 
 class Th(HTMLElement):
 
-    def __call__(self: Th, *args: Phrasingcontent | list[Phrasingcontent]) -> Th:
+    def __call__(self: Th, *args: Phrasingcontent | str | list[Phrasingcontent | str]) -> Th:
         return Th(self._tag, self._attributes, self.get_children_from_args(args))
 
 def th(_class: str | None = None, **kwargs: Any) -> Th:
@@ -929,7 +929,7 @@ def th(_class: str | None = None, **kwargs: Any) -> Th:
 
 class Td(HTMLElement):
 
-    def __call__(self: Td, *args: Flowcontent | list[Flowcontent]) -> Td:
+    def __call__(self: Td, *args: Flowcontent | str | list[Flowcontent | str]) -> Td:
         return Td(self._tag, self._attributes, self.get_children_from_args(args))
 
 def td(_class: str | None = None, **kwargs: Any) -> Td:
